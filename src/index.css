@@ -26,13 +26,14 @@ code {
   max-height: 960px;
   padding-left: 175px;
   padding-top: 99px;
-  overflow: hidden;
+  padding-bottom: 100px;
+  position: relative;
 }
 .header-bg {
   position: relative;
   width: 1760px;
   height: 680px;
-
+  overflow: hidden;
   border-radius: 25px;
   background-color: #7b72fe;
 }
@@ -102,4 +103,27 @@ code {
   border-radius: 50%;
   margin: 0 5px;
   background: #746bf4;
+}
+.block-dots {
+  position: absolute;
+  z-index: 999;
+  width: 190px;
+  height: 190px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.block-dots.up {
+  left: 1088px;
+  top: 168px;
+}
+.block-dots.down {
+  top: 669px;
+  left: 78px;
+}
+.dots {
+  margin: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: gray;
 }

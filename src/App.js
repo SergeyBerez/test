@@ -1,4 +1,5 @@
 import "./App.css";
+import Dots from "./components/Dots";
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
             <div className="circles"></div>
           </div>
         </div>
+        <Dots cls="up"></Dots>
+        <Dots cls="down"></Dots>
       </header>
       <div className="container mx-auto"></div>
     </div>
