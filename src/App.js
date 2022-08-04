@@ -6,7 +6,9 @@ function App() {
       <header className="header">
         <div className="header-bg">
           <div className="header-title-block">
-            <h1 className="h1-title">Профессия Frontend — разработчик</h1>
+            <h1 className="h1-title">
+              <p>Профессия</p> Frontend — разработчик
+            </h1>
             <p className="header-subtitle">
               Стань с нуля продвинутым Junior разработчиком за 7 месяцев с
               знанием технологий больше, чем у других кандидатов
