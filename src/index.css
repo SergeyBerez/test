@@ -24,7 +24,7 @@ code {
 .header {
   max-width: 1920px;
   max-height: 960px;
-  padding-left: 160px;
+  padding-left: 175px;
   padding-top: 99px;
   overflow: hidden;
 }
@@ -32,6 +32,7 @@ code {
   position: relative;
   width: 1760px;
   height: 680px;
+
   border-radius: 25px;
   background-color: #7b72fe;
 }
