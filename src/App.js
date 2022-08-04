@@ -6,9 +6,18 @@ function App() {
       <header className="header">
         <div className="header-bg">
           <div className="header-title-block">
-            <h1 className="text-3xl font-bold underline">
-              Профессия Frontend — разработчик
-            </h1>
+            <h1 className="h1-title">Профессия Frontend — разработчик</h1>
+            <p className="header-subtitle">
+              Стань с нуля продвинутым Junior разработчиком за 7 месяцев с
+              знанием технологий больше, чем у других кандидатов
+            </p>
+            <p className="header-subtitle-description">
+              Начиная с основ изучишь JavaScript, разберешься с самыми
+              популярными технологиями, научишься писать Frontend на фреймворке
+              и связывать его с Backend. Навыки после курса оцениваются от 100
+              т.р.
+            </p>
+            <button className="button-header">задать вопрос об обучении</button>
           </div>
 
           <div className="circles-block">

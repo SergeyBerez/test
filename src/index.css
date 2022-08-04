@@ -4,8 +4,9 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+
+  font-family: -apple-system, BlinkMacSystemFont, "Golos", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,24 +19,86 @@ code {
 .main-section {
   margin: 0 auto;
   max-width: 1920px;
-  border: 2px solid rgb(238, 0, 0);
 }
-.container {
-  border: 2px solid rgb(238, 0, 0);
-}
+
 .header {
-  width: 1920px;
-  height: 960px;
-  padding-left: 200px;
-  padding-top: 40px;
+  max-width: 1920px;
+  max-height: 960px;
+  padding-left: 160px;
+  padding-top: 99px;
   overflow: hidden;
 }
 .header-bg {
+  position: relative;
   width: 1760px;
   height: 680px;
   border-radius: 25px;
   background-color: #7b72fe;
 }
-h1{
-  
+.header-title-block {
+  position: absolute;
+  z-index: 999;
+  max-width: 747px;
+  max-height: 126px;
+  padding-top: 67px;
+  padding-left: 95px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.h1-title {
+  font-size: 54px;
+  line-height: 130%;
+  /* or 70px */
+  letter-spacing: 0.01em;
+  word-wrap: break-word;
+  white-space: initial;
+}
+
+.header-subtitle {
+  width: 747px;
+  margin-top: 40px;
+  font-size: 30px;
+  line-height: 140%;
+  /* or 42px */
+  letter-spacing: 0.005em;
+}
+.header-subtitle-description {
+  margin-top: 20px;
+  /* width: 699px; */
+  /* height: 81px; */
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+  letter-spacing: 0.005em;
+}
+.button-header {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 28px 40px;
+
+  background: #ed7138;
+  border-radius: 51px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #ffffff;
+}
+.circles-block {
+  top: 370px;
+  left: 146px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circles {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background: #746bf4;
 }
