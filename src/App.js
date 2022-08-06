@@ -1,11 +1,17 @@
 import "./App.css";
 import Dots from "./components/Dots";
+import ButtonTooltip from "./components/ButtonTooltip";
 
 function App() {
   return (
-    <div className="main-section">
+    <>
       <header className="header">
         <div className="header-bg">
+          <div className="circles-block">
+            <div className="circles"></div>
+            <div className="circles"></div>
+            <div className="circles"></div>
+          </div>
           <div className="header-title-block">
             <h1 className="h1-title">
               <p>Профессия</p> Frontend — разработчик
@@ -23,17 +29,15 @@ function App() {
             <button className="button-header">задать вопрос об обучении</button>
           </div>
 
-          <div className="circles-block">
-            <div className="circles"></div>
-            <div className="circles"></div>
-            <div className="circles"></div>
-          </div>
+       
         </div>
+        <ButtonTooltip></ButtonTooltip>
         <Dots cls="up"></Dots>
         <Dots cls="down"></Dots>
       </header>
+
       <div className="container mx-auto"></div>
-    </div>
+    </>
   );
 }
 export default App;
