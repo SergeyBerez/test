@@ -6,27 +6,30 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: -apple-system, BlinkMacSystemFont, 'Golos', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Golos", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 .header {
-  padding-left: 160px;
   padding-top: 99px;
   position: relative;
   border-bottom: 3px solid #ed7138;
 }
+.header-subtitle-block {
+  display: flex;
+}
 .header-bg {
+  position: relative;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  margin-left: -45px;
   border-radius: 25px 0 0 25px;
   background-color: #7b72fe;
 }
@@ -42,6 +45,7 @@ code {
 }
 
 .h1-title {
+  padding-right: 100px;
   font-size: 54px;
   line-height: 130%;
   /* or 70px */
@@ -69,18 +73,19 @@ code {
   letter-spacing: 0.005em;
 }
 .section-button-circles {
+  overflow: hidden;
+  position: relative;
   display: flex;
   padding-left: 85px;
   margin-top: -170px;
 }
 .button-header {
-  margin-top: 160px;
+  align-self: center;
   margin-left: -45px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 28px 40px;
-
   background: #ed7138;
   border-radius: 51px;
   font-weight: 400;
@@ -99,65 +104,38 @@ code {
   /* overflow: hidden; */
 }
 .circles {
+  display: flex;
+  align-items: center;
   width: 340px;
   height: 340px;
   border-radius: 50%;
   margin: 0 5px;
   background: #746bf4;
 }
-.block-dots {
-  position: absolute;
-  z-index: 999;
-  width: 190px;
-  height: 190px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.block-dots.up {
-  left: 1088px;
-  top: 168px;
-}
-.block-dots.down {
-  top: 710px;
-  left: 78px;
-  z-index: 1;
-}
-.dots {
-  margin: 6px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: gray;
-}
+
 .button-exel {
-  cursor: pointer;
-  z-index: 99999;
   position: absolute;
-  transform: translate(1030%, -182%);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  top: 550px;
+  left: 800px;
   padding: 18px;
   background: #7f76ff;
-  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.07), 0px 24px 160px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 5px 50px rgb(0 0 0 / 7%), 0px 24px 160px rgb(0 0 0 / 5%);
   width: 76px;
   height: 76px;
   border-radius: 24px;
+  cursor: pointer;
 }
 
 .exel-animation {
-  transform: translate(112%, -100%);
-  z-index: 9999;
+  width: 860px;
   position: absolute;
-  max-width: 730px;
-
+  left: 880px;
+  top: 140px;
   background-color: #ffffff;
-  opacity: 0;
   display: none;
-  transition: 1s;
+  z-index: 9999;
 }
 .exel-animation.moveleft {
-  opacity: 1;
   display: block;
 }
 img {
@@ -167,15 +145,14 @@ img {
 
 .tooltip-box {
   width: 396px;
-  height: 160px;
+  /* height: 160px; */
   position: absolute;
-  z-index: 9999;
-  transform: translate(166%, -58%);
+  left: 710px;
+  top: 610px;
   padding: 40px 24px 30px 24px;
-
   border-radius: 24px;
   background: #ffffff;
-  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.07), 0px 24px 160px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 5px 50px rgb(0 0 0 / 7%), 0px 24px 160px rgb(0 0 0 / 5%);
 }
 .tooltip-box-text {
   font-size: 16px;

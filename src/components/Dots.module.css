@@ -1,0 +1,25 @@
+.block-dots {
+  /* position: absolute;
+  z-index: 999; */
+  width: 190px;
+  height: 190px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.block-dots-down {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  display: flex;
+  flex-wrap: wrap;
+  bottom: -50px;
+  left: -50px;
+  z-index: -99;
+}
+.dots {
+  margin: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: gray;
+}
